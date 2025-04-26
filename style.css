@@ -1,1 +1,189 @@
+/* Reset i elementeve bazë */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Përdorimi i fontit shkencor - Roboto Mono */
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+/* HEADER: Foto sfondi dhe stilizimi i tekstit */
+.header {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Mund të rregullohet më vonë sipas dëshirës */
+  background-image: url('your-header-image-url.jpg'); /* Ndrysho me linkun e duhur më vonë */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-overlay {
+  background: rgba(0, 0, 0, 0.5); /* Për t'i dhënë kontrast tekstit të bardhë */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  color: #fff;
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* SUBHEADER: Foto sfondi tjetër poshtë header-it */
+.subheader {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-image: url('your-subheader-image-url.jpg'); /* Placeholder për foto poshtë header-it */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subheader h2 {
+  color: #fff;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+/* Seksioni i stacioneve: Background pink dhe butonat */
+.stations {
+  background-color: #ffc0cb; /* Pink e lehtë */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.station-buttons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.station-btn {
+  background-color: #87CEFA; /* Ngjyrë bojqielli e hapur */
+  border: none;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efekti hover për butonat */
+.station-btn:hover {
+  background-color: #00BFFF; /* Një nuancë më e errët e bojqiellit */
+  transform: scale(1.05);
+}
+
+/* MODAL: Stili për modal pop-up */
+.modal {
+  display: none; /* I fshehur nga fillimi */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7); /* Overlay e errët */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+}
+
+.modal-content .close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.modal-content .close:hover {
+  color: #000;
+}
+
+/* GALERIA/FOTOT në footer */
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsivitet për PC dhe TV */
+/* Për ekranet më të mëdha */
+@media (min-width: 1200px) {
+  .header {
+    height: 400px;
+  }
+  .header h1 {
+    font-size: 4em;
+  }
+  .subheader {
+    height: 300px;
+  }
+  .subheader h2 {
+    font-size: 3em;
+  }
+  .station-btn {
+    font-size: 1.5em;
+    padding: 20px 30px;
+  }
+}
+
+/* Për ekranet shumë të mëdha (TV) */
+@media (min-width: 1920px) {
+  .header {
+    height: 500px;
+  }
+  .header h1 {
+    font-size: 5em;
+  }
+  .subheader {
+    height: 350px;
+  }
+  .subheader h2 {
+    font-size: 3.5em;
+  }
+  .station-btn {
+    font-size: 1.8em;
+    padding: 25px 35px;
+  }
+}
 
