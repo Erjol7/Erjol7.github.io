@@ -17,7 +17,7 @@ body {
   position: relative;
   width: 100%;
   height: 300px; /* Mund ta rregulloni sipas dëshirës */
-  background-image: url('https://github.com/Erjol7/Erjol7.github.io/blob/main/Biologjia%2011.png?raw=true'); /* Vendosni URL-në e duhur këtu */
+  background-image: url('https://github.com/Erjol7/Erjol7.github.io/blob/main/biology.jpg?raw=true'); /* Vendosni URL-në e duhur këtu */
   background-size: contain;      /* Siguron që e gjithë fotoja të shfaqet */
   background-repeat: no-repeat;  /* Për të parandaluar përsëritjen e imazhit */
   background-position: center;   /* Poziciono imazhin në qendër */
