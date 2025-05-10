@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biologjia 11 - Gjenet dhe Gjenetika</title>
-  <!-- Importo fontin shkencor (Roboto Mono) nga Google Fonts -->
+  <!-- Importo fontin shkencor nga Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <!-- Lidhu skedarin e jashtëm me CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HEADER: Foto klikues me link -->
+  <!-- HEADER: Imazh plot me overlay teksti -->
   <header class="header">
-  <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/biology.jpg?raw=true">
-</header>
+    <img src="https://raw.githubusercontent.com/Erjol7/Erjol7.github.io/main/Biologjia%2011.png" alt="Header Biology Image" class="header-img">
+    <div class="header-overlay">
+      <h1>Biologjia 11</h1>
+      <h2>Gjenet dhe Gjenetika</h2>
+    </div>
+  </header>
   
-  <!-- SUBHEADER: Foto tjetër poshtë header-it -->
-  <section class="subheader">
-    <img src="YOUR_SUBHEADER_IMAGE_LINK_HERE" alt="Gjenet dhe Gjenetika" class="subheader-img">
-  </section>
-  
-  <!-- Seksioni me background pink për opsionet e stacioneve -->
+  <!-- Seksioni i stacioneve (i pandryshuar sipas kërkesës) -->
   <section class="stations">
     <div class="station-buttons">
       <button class="station-btn" data-station="1">Stacioni 1</button>
@@ -30,17 +30,17 @@
     </div>
   </section>
   
-  <!-- Modal pop-up për shfaqjen e pyetjeve për secilin stacion -->
+  <!-- Modal pop-up për pyetjet e stacioneve -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
       <div id="modal-body">
-        <!-- Përmbajtja e modal-it do të ngarkohet dinamikisht -->
+        <!-- Përmbajtja e modal-it do të ngarkohet dinamikisht nga JavaScript -->
       </div>
     </div>
   </div>
   
-  <!-- Footer me galeri me disa foto të tjera shkencore, vendoset statikisht -->
+  <!-- Footer me galeri me disa foto shkencore -->
   <footer class="footer">
     <div class="gallery">
       <img src="science-photo1.jpg" alt="Foto shkencore 1" class="gallery-image">
@@ -49,11 +49,7 @@
     </div>
   </footer>
   
+  <!-- Lidhu skedarin e JavaScript-it -->
   <script src="script.js"></script>
 </body>
 </html>
-
-  <script src="script.js"></script>
-</body>
-</html>
-
