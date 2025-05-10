@@ -16,11 +16,13 @@ body {
 .header {
   position: relative;
   width: 100%;
-  /* Lejon që container-i të përshtatet automatikisht sipas imazhit */
-  height: auto;
-  overflow: hidden;
-  background: #000; /* Opsionale: një ngjyrë sfondi për të mbuluar hapësirat e zbrazëta */
+  height: 300px; /* Mund ta rregulloni sipas dëshirës */
+  background-image: url('your-header-image-url.jpg'); /* Vendosni URL-në e duhur këtu */
+  background-size: contain;      /* Siguron që e gjithë fotoja të shfaqet */
+  background-repeat: no-repeat;  /* Për të parandaluar përsëritjen e imazhit */
+  background-position: center;   /* Poziciono imazhin në qendër */
 }
+
 
 .header-img {
   width: 100%;
