@@ -16,16 +16,20 @@ body {
 .header {
   position: relative;
   width: 100%;
-  height: 100vh; /* Merr lartësinë e plotë të viewport-it */
+  /* Lejon që container-i të përshtatet automatikisht sipas imazhit */
+  height: auto;
   overflow: hidden;
+  background: #000; /* Opsionale: një ngjyrë sfondi për të mbuluar hapësirat e zbrazëta */
 }
 
 .header-img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Siguron mbulimin e plotë me ruajtjen e proporcionit */
+  height: auto;
+  /* Përdor 'contain' për të siguruar që imazhi shfaqet plotësisht */
+  object-fit: contain;
+  display: block; /* Hiq çdo gap të padëshiruar poshtë fotos */
 }
-}
+
 
 /* SUBHEADER: Foto tjetër poshtë header-it */
 .subheader {
