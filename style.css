@@ -1,5 +1,5 @@
 /* ======================================== */
-/*          RESET & BASICS                */
+/*             RESET & BASICS             */
 /* ======================================== */
 * {
   box-sizing: border-box;
@@ -14,7 +14,7 @@ body {
 }
 
 /* ======================================== */
-/*          HEADER STYLES                 */
+/*             HEADER STYLES              */
 /* ======================================== */
 .header {
   position: relative;
@@ -28,14 +28,13 @@ body {
   display: block;
 }
 
-/* Overlay mbulon të gjithë header‑in për të rritur kontrastin e tekstit */
 .header-overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Overlay e lehtë për kontrast */
+  background: rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,16 +47,16 @@ body {
 .header-overlay h1 {
   font-size: 3em;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .header-overlay h2 {
   font-size: 1.8em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 /* ======================================== */
-/*          STATIONS (Nuk e ndryshojmë)      */
+/*             STATIONS                   */
 /* ======================================== */
 .stations {
   background-color: #ffc0cb;
@@ -87,7 +86,7 @@ body {
 }
 
 /* ======================================== */
-/*          MODAL STYLES                  */
+/*             MODAL STYLES               */
 /* ======================================== */
 .modal {
   display: none; /* I fshehur nga fillimi */
@@ -127,7 +126,7 @@ body {
 }
 
 /* ======================================== */
-/*          FOOTER & GALLERY              */
+/*           FOOTER & GALLERY             */
 /* ======================================== */
 .footer {
   background-color: #333;
@@ -149,7 +148,60 @@ body {
 }
 
 /* ======================================== */
-/*          RESPONSIVE STYLES             */
+/*           QUIZ FORM STYLES             */
+/* ======================================== */
+form {
+  text-align: left;
+}
+
+form fieldset {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+form legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #87CEFA;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00BFFF;
+}
+
+.result {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+/* ======================================== */
+/*           RESPONSIVE STYLES            */
 /* ======================================== */
 @media (min-width: 1200px) {
   .header-overlay h1 {
