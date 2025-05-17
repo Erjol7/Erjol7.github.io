@@ -56,7 +56,7 @@ body {
 }
 
 /* ======================================== */
-/*             STATIONS                   */
+/*             MAIN BUTTON                */
 /* ======================================== */
 .stations {
   background-color: #ffc0cb;
@@ -97,16 +97,16 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 10% auto;
+  margin: 5% auto;
   padding: 20px;
   border-radius: 10px;
-  width: 80%;
-  max-width: 600px;
+  width: 90%;
+  max-width: 800px;
   position: relative;
 }
 
@@ -126,29 +126,7 @@ body {
 }
 
 /* ======================================== */
-/*           FOOTER & GALLERY             */
-/* ======================================== */
-.footer {
-  background-color: #333;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.gallery-image {
-  width: 200px;
-  height: auto;
-  border-radius: 10px;
-}
-
-/* ======================================== */
-/*           QUIZ FORM STYLES             */
+/*           FORM & QUIZ STYLES           */
 /* ======================================== */
 form {
   text-align: left;
@@ -198,6 +176,29 @@ button:hover {
 .result {
   margin-top: 15px;
   font-weight: bold;
+  color: green;
+}
+
+/* ======================================== */
+/*           FOOTER & GALLERY             */
+/* ======================================== */
+.footer {
+  background-color: #333;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.gallery-image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
 }
 
 /* ======================================== */
