@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="sq">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biologjia 11 - Gjenet dhe Gjenetika</title>
-  <!-- Importo fontin shkencor nga Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-  <!-- Lidhu skedarin e jashtëm me CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biologjia 11 - Gjenet dhe Gjenetika</title>
+    <!-- Importo fontin shkencor nga Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+    <!-- Lidhu skedarin e jashtëm me CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- HEADER: Imazh plot me overlay teksti -->
+    <header class="header">
+      <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/biology.jpg?raw=true" alt="Header Biology Image" class="header-img" />
+      <div class="header-overlay">
+        <h1></h1>
+        <h2>Gjenet dhe Gjenetika</h2>
+      </div>
+    </header>
 
-  <!-- HEADER: Imazh plot me overlay teksti -->
-  <header class="header">
-    <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/biology.jpg?raw=true" alt="Header Biology Image" class="header-img">
-    <div class="header-overlay">
-      <h1></h1>
-      <h2>Gjenet dhe Gjenetika</h2>
-    </div>
-  </header>
-  
-  <!-- Seksioni i stacioneve -->
-  <section class="stations">
-    <div class="station-buttons">
-      <button class="station-btn" data-station="1">Stacioni 1</button>
-      <button class="station-btn" data-station="2">Stacioni 2</button>
-      <button class="station-btn" data-station="3">Stacioni 3</button>
-      <button class="station-btn" data-station="4">Stacioni 4</button>
-    </div>
-  </section>
-  
-  <!-- Modal pop-up për pyetjet e stacioneve -->
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <div id="modal-body">
-        <!-- Përmbajtja e modal-it ngarkohet dinamikisht nga JavaScript -->
+    <!-- Seksioni kryesor me butonin e vetëm për testim -->
+    <section class="stations">
+      <div class="station-buttons">
+        <button class="station-btn" id="testim-btn">Testim</button>
+      </div>
+    </section>
+
+    <!-- Modal pop-up që ngarkon kuizin e plotë -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-body">
+          <!-- Përmbajtja e kuizit ngarkohet këtu nga JavaScript -->
+        </div>
       </div>
     </div>
-  </div>
-  
-  <!-- Footer me galeri me disa foto shkencore -->
-  <footer class="footer">
-    <div class="gallery">
-      <img src="science-photo1.jpg" alt="Foto shkencore 1" class="gallery-image">
-      <img src="science-photo2.jpg" alt="Foto shkencore 2" class="gallery-image">
-      <img src="science-photo3.jpg" alt="Foto shkencore 3" class="gallery-image">
-    </div>
-  </footer>
-  
-  <!-- Lidhu skedarin e JavaScript-it -->
-  <script src="script.js"></script>
-</body>
+
+    <!-- Footer me galeri me disa foto shkencore -->
+    <footer class="footer">
+      <div class="gallery">
+        <img src="science-photo1.jpg" alt="Foto shkencore 1" class="gallery-image" />
+        <img src="science-photo2.jpg" alt="Foto shkencore 2" class="gallery-image" />
+        <img src="science-photo3.jpg" alt="Foto shkencore 3" class="gallery-image" />
+      </div>
+    </footer>
+
+    <!-- EmailJS library -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      emailjs.init("YOUR_USER_ID"); // Zëvendëso "YOUR_USER_ID" sipas EmailJS
+    </script>
+    <!-- Lidhu skedarin e JavaScript-it -->
+    <script src="script.js"></script>
+  </body>
 </html>
