@@ -331,7 +331,6 @@ document.addEventListener("DOMContentLoaded", function () {
           ${keySection4}
         `;
         document.getElementById("result").innerHTML = resultHTML;
-          );
       });
     }
   }
