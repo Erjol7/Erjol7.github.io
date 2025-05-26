@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <label><input type="radio" name="q3e" value="3"> Transporti i energjisë</label>
         </fieldset>
         <fieldset>
-          <legend>f) Cili është roli i kromozomeve seksuale tek njerëzit? <em>(P:ii)</em></legend>
+          <legend>f) Cili është roli i kromozomeve seksuale tek njerëzit? </legend>
           <label><input type="radio" name="q3f" value="0"> Përcaktimi i tipareve të trashëguara</label>
           <label><input type="radio" name="q3f" value="1"> Përcaktimi i gjinisë së individit</label>
           <label><input type="radio" name="q3f" value="2"> Prodhimi i energjisë për qelizën</label>
