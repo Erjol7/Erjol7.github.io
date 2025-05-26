@@ -7,26 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Butoni kryesor "Testim"
   const testimBtn = document.getElementById("testim-btn");
 
-  // Kur klikohet butoni "Testim", ngarkohet kuizi i plotë (të katër pjesët)
-  testimBtn.addEventListener("click", function () {
-    modalBody.innerHTML = quizContent; // quizContent po vijon më poshtë
-    modalBody.style.backgroundColor = "#e6ffe6"; // Vendos ngjyrën jeshile të hapur për kuizin
-    modal.style.display = "block";
-    addFormListener(); // Shton event listener për butonin Finish të kuizit
-  });
-
-  // Mbyll modalin kur klikohet shenja "×"
-  closeModal.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-
-  // Mbyll modalin edhe kur klikohet jashtë përmbajtjes së modalit
-  window.addEventListener("click", function (e) {
-    if (e.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
   // Përmbajtja e kuizit si një string që përfshin të katër pjesët
   const quizContent = `
     <form id="quiz-form">
@@ -233,7 +213,6 @@ document.addEventListener("DOMContentLoaded", function () {
   `;
 
   // Butoni "Testim" hap modalin dhe i vendos përmbajtjen plus vendos background jeshil për modalBody
-  const testimBtn = document.getElementById("testim-btn");
   testimBtn.addEventListener("click", function () {
     modalBody.innerHTML = quizContent;
     modalBody.style.backgroundColor = "#e6ffe6"; // ngjyrë jeshile e lehtë
