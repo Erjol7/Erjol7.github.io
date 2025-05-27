@@ -73,13 +73,13 @@ document.addEventListener("DOMContentLoaded", function () {
           <input type="text" name="law" placeholder="Shkruaj ligjin">
         </fieldset>
         <fieldset>
-          <legend>Emerto pjesët e figurave</legend>
-          <p>a) Pjesa e figurës:</p>
+          <legend>Emerto figurat </legend>
+          <p>a) (ngjyrat mund te jene te cfardoshme, jane per orjentim ):</p>
           <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/Screenshot%202025-05-17%20173801.png?raw=true" alt="Foto 1" style="max-width:200px;">
-          <label>Emri: <input type="text" name="part_a" placeholder="Shkruaj emrin e fotos"></label>
-          <p>b) Pjesa tjetër:</p>
+          <label>Emri: <input type="text" name="part_a" placeholder="shkruaj se cfare jane elementet me ngjyre blu dhe cfare jane me ngjyre roze  "></label>
+          <p>b) :</p>
           <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/Screenshot%202025-05-17%20174418.png?raw=true" alt="Foto 2" style="max-width:200px;">
-          <label>Emri: <input type="text" name="part_b" placeholder="Shkruaj emrin e fotos"></label>
+          <label>Emri: <input type="text" name="part_b" placeholder="shkruaj cfare tregohet ne figure "></label>
         </fieldset>
       </section>
       
