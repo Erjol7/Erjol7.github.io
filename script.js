@@ -74,10 +74,12 @@ document.addEventListener("DOMContentLoaded", function () {
         </fieldset>
         <fieldset>
           <legend>Emerto pjesët e figurave</legend>
-          <p>a) Pjesa e figurës (Foto):</p>
-          <input type="file" name="part_a" accept="image/*" style="max-width:200px;">
-          <p>b) Pjesa tjetër (Foto):</p>
-          <input type="file" name="part_b" accept="image/*" style="max-width:200px;">
+          <p>a) Pjesa e figurës:</p>
+          <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/Screenshot%202025-05-17%20173801.png?raw=true" alt="Foto 1" style="max-width:200px;">
+          <label>Emri: <input type="text" name="part_a" placeholder="Shkruaj emrin e fotos"></label>
+          <p>b) Pjesa tjetër:</p>
+          <img src="https://github.com/Erjol7/Erjol7.github.io/blob/main/Screenshot%202025-05-17%20174418.png?raw=true" alt="Foto 2" style="max-width:200px;">
+          <label>Emri: <input type="text" name="part_b" placeholder="Shkruaj emrin e fotos"></label>
         </fieldset>
       </section>
       
